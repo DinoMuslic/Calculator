@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --calculator-color: hsl(204, 69%, 76%);
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(135deg, rgba(0,255,136,1) 0%, rgba(0,255,205,1) 25%, rgba(0,203,255,1) 49%, rgba(44,158,255,1) 75%, rgba(0,56,181,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+}
+
+.center{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculator-body{
+    background-color: var(--calculator-color);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    width: 25vw;
+    height: 75vh;
+    place-items: center;
+    padding: 1rem 1rem;
+    border: 2px solid #333;
+    border-radius: 5%;
+}
+
+.display{
+    width: 100%;
+    height: 70%;
+    background-color: aliceblue;
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    box-shadow: 0 0.2rem 0.1rem hsl(201, 30%, 63%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0.2rem;
+    font-size: 0.9rem;
+    direction: rtl;
+    border: 1px solid #333;
+}
+
+.btn{
+    display: grid;
+    place-items: center;
+    background-color: aliceblue;
+    width: 90%;
+    height: 60%;
+    box-shadow: 0 0.2rem 0.1rem hsl(201, 30%, 63%);
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(210, 215, 219);
+}
+
+.dif-color{
+    background-color: hsl(123, 100%, 77%);
+}
+.dif-color:hover{
+    background-color: hsl(123, 65%, 67%);
+}
+
+.clear{
+    background-color: hsl(354, 96%, 81%);
+}
+.clear:hover{
+    background-color: hsl(354, 38%, 63%);
+}
